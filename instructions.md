@@ -1,5 +1,5 @@
 
-# How to use this file:
+# How to use this file
 This may be your first introduction to Markdown! Like HTML, Markdown is a structural language that facilitates formatting. You'll wanna have some basics in your back pocket for when you write README files in the future (Something like `README.md` is a markdown file because it ends with the `.md` extension).
 
 If you look at the raw Markdown text of this file, you'll notice that hashes `#` are like header elements in HTML: a single hash is like an `<h1>`, and more hashes represents subsequent header sizes. You can also write checkboxes using square brackets, and lists (ordered and unordered) using numbers and hyphens, respectively.
