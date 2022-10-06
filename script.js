@@ -32,7 +32,7 @@ window.addEventListener('load', function () {
             document.getElementById('faultyItems').style.visibility = 'hidden';
         } else {
             document.getElementById('pilotStatus').innerHTML = `Pilot ${pilotName.value} is ready for launch`;
-            document.getElementById('copilotStatus').innerHTML = `Coilot ${copilotName.value} is ready for launch`;
+            document.getElementById('copilotStatus').innerHTML = `Copilot ${copilotName.value} is ready for launch`;
             if (Number(fuelLevel.value) <= 10000) {
                 document.getElementById('fuelStatus').innerHTML = 'Fuel level too low for launch';
 
@@ -48,7 +48,6 @@ window.addEventListener('load', function () {
     fetch('https://handlers.education.launchcode.org/static/planets.json').then((response) => {
         response.json().then((json) => {
             let i = Math.round(Math.random() * (json.length -1));
-            console.log(json);
             document.getElementById('missionTarget').innerHTML = `<h2>Mission Destination</h2>
             <ol>
                 <li>Name: ${json[i].name}</li>
