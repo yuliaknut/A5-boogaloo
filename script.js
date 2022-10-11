@@ -24,6 +24,9 @@ window.addEventListener('load', function () {
         if (pilotName.value === '' || copilotName.value === '' || fuelLevel.value === '' || cargoMass.value === '') {
             window.alert('All fields are required.');
             event.preventDefault();
+        } else if (!isNaN(Number(pilotName.value)) || !isNaN(Number(copilotName.value)) || isNaN(Number(fuelLevel.value)) || isNaN(Number(cargoMass.value))) {
+            window.alert('Please make sure to provide valid input.');
+            event.preventDefault();
         }
 
         if (Number(fuelLevel.value) >= 10000 && Number(cargoMass.value) <= 10000) {
